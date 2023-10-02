@@ -7,22 +7,24 @@
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-color: white;
+  background-color: #1e293b;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: aliceblue;
 }
-.hero h1 {
-  font-size: 45px;
+.hero h4 {
+  font-size: 40px;
+  color: #94a3b8;
   /* font-weight:500; */
   margin-bottom: 20px;
 }
 textarea {
   width: 600px;
   height: 250px;
-  background: black;
-  color: antiquewhite;
+  background: #64748b;
+  color:#334155;
   font-size: 20px;
   border: 0;
   outline: 0;
@@ -33,16 +35,16 @@ textarea {
   box-shadow: 0px 0px 0px 3px gray;
 }
 textarea::placeholder {
-  color: aliceblue;
+  color: #334155;
   font-style: italic;
 }
 select {
-  flex:1;
+  flex: 1;
   height: 40px;
   border: 0;
   border-radius: 15px;
-  color: aliceblue;
-  background: black;
+  color: #334155;
+  background: #64748b;
   margin-right: 10px;
   cursor: pointer;
   text-align: center;
@@ -55,8 +57,8 @@ button {
   height: 40px;
   border: 0;
   border-radius: 15px;
-  color: aliceblue;
-  background: black;
+  color: #334155;
+  background: #64748b;
   margin-left: 10px;
   cursor: pointer;
   font-size: large;
