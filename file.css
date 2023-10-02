@@ -7,7 +7,7 @@
 .hero {
   width: 100%;
   min-height: 100vh;
-  background-color: aqua;
+  background-color:white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,28 +18,40 @@
   /* font-weight:500; */
   margin-bottom: 20px;
 }
-textarea{
-    width:600px;
-    height:250px;
-    background:black;
-    color:antiquewhite;
-    font-size:20px;
-    border:0;
-    outline:0;
-    padding:20px;
-    border-radius:35px;
-    resize:none;
-    margin-bottom: 20px;
+textarea {
+  width: 600px;
+  height: 250px;
+  background: black;
+  color: antiquewhite;
+  font-size: 20px;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  border-radius: 35px;
+  resize: none;
+  margin-bottom: 20px;
 }
-select{
-    width:100px;
-    height:20px;
-    border:0;
-    border-radius:15px;
+textarea::placeholder{
+    color:aliceblue;
+    font-style: italic;
 }
-button{
-    width:100px;
-    height:20px;
-    border:0;
-    border-radius:15px;
+select {
+  width: 150px;
+  height: 40px;
+  border: 0;
+  border-radius: 15px;
+  color: aliceblue;
+  background: black;
+  margin-right:10px;
+  cursor: pointer;
+}
+button {
+  width: 150px;
+  height: 40px;
+  border: 0;
+  border-radius: 15px;
+  color: aliceblue;
+  background: black;
+  margin-left:10px;
+  cursor: pointer;
 }
