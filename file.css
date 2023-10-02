@@ -24,7 +24,7 @@ textarea {
   width: 600px;
   height: 250px;
   background: #64748b;
-  color:#334155;
+  color: #334155;
   font-size: 20px;
   border: 0;
   outline: 0;
@@ -33,6 +33,7 @@ textarea {
   resize: none;
   margin-bottom: 20px;
   box-shadow: 0px 0px 0px 3px gray;
+  appearance: auto;
 }
 textarea::placeholder {
   color: #334155;
@@ -50,7 +51,13 @@ select {
   text-align: center;
   font-size: large;
   box-shadow: 0px 0px 0px 3px gray;
-  appearance: bold;
+  appearance: none;
+  background-image: url(images/dropdown.png);
+  /* background-repeat is used here because the image is small and to fit into the entire area, it may repeat multiple times */
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: 250px;
+  background-position-y: 15px;
 }
 button {
   width: 150px;
@@ -63,4 +70,11 @@ button {
   cursor: pointer;
   font-size: large;
   box-shadow: 0px 0px 0px 3px gray;
+  background-image: url(images/play.png);
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: 10px;
+  background-position-y: 10px;
 }
+
+

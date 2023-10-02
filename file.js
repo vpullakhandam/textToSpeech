@@ -12,8 +12,15 @@ voiceSelect.addEventListener("change", changeVoice);
 document.querySelector("button").addEventListener("click", play);
 
 function play() {
+  document.querySelector("button").style.backgroundColor = "#0f172a";
   speech.text = document.querySelector("textarea").value;
   window.speechSynthesis.speak(speech);
+  speech.onend = function () {
+    finished();
+  };
+}
+function finished() {
+  document.querySelector("button").style.backgroundColor = "#64748b";
 }
 function listOfVoices() {
   voices = window.speechSynthesis.getVoices();
